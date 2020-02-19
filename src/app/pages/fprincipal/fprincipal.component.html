@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <h3>Principal</h3>
+</mat-toolbar>
+
+<app-component-list [conjugesInput]="conjuges">
+
+</app-component-list>
+
+<button mat-raised-button color="primary" (click)="addConjuge()">
+  <i class="material-icons">add</i> Incluir
+</button>
+
+<ul>
+  <li *ngFor="let item of dados" >{{item.value}} - {{item.keyValue}}</li>
+</ul>
